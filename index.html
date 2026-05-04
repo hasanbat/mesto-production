@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
     
-    <script type="module" crossorigin src="./assets/index-85fda90f.js"></script>
+    <script type="module" crossorigin src="./assets/index-ba9bbe1e.js"></script>
     <link rel="stylesheet" href="./assets/index-7f4d6d6c.css">
   </head>
   <body class="page">
@@ -57,6 +57,8 @@
                 required
                 minlength="2"
                 maxlength="40"
+                pattern="[A-Za-zА-Яа-яёЁ\s\-]+"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error user-name-error"></span>
             </label>
